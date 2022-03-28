@@ -92,23 +92,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-#
 # DATABASES = {
 #     'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dbv8v2dnik2138',
-#         'HOST' :'ec2-18-233-83-165.compute-1.amazonaws.com',
-#         'PORT' : 5432,
-#         'USER' : 'vclgvizjgfqlzi',
-#         'PASSWORD' : '073f72c2a8dfe29fe2167d94c6be6df60f7e2a393dd8e16ca4f2434ee1686e36'
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+#
+DATABASES = {
+    'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd89ea5fu68erth',
+        'HOST' :'ec2-18-215-96-22.compute-1.amazonaws.com',
+        'PORT' : 5432,
+        'USER' : 'cnxlietlfmazxz',
+        'PASSWORD' : '0ba0b8dfbda66f215424203ead9d0929f1804e65f5a47919c6a8f8f6456da401'
+    }
+}
 django_heroku.settings(locals())
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
